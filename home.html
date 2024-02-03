@@ -1,0 +1,149 @@
+<!DOCTYPE html><html>
+    <head>
+       <title>Home-Page</title>
+         <link rel="stylesheet" type="text/css" href="home.css">
+       <link rel="stylesheet" type="text/css" href="page-2.css">
+       
+        <meta charset="UTF-8">
+        <meta name="viewportt" content="width=device-width,intital-scale=1.0">
+        <meta property=’og:image’ content="images/1*l4xICbIIYlz1OTymWCoUTw.jpg"/>
+   
+    
+<style>
+   
+  nav {
+    background-color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom-style:outset;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+  }
+  .bars a:hover{
+      color:red;
+  }
+  
+  .logo img {
+    height: 50px;
+  
+    
+   
+  }
+  
+  .bars a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 10px;
+    font-weight:500;
+  }
+ 
+ 
+  @media only screen and (max-width: 600px){
+  body{
+    height:auto;
+  
+  }
+  .logo img{
+    height: 40px;
+  }
+
+}
+
+  </style>
+  </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <img src="images/Campus-seal-2048x500.png">
+            </div>
+            <div class="bars">
+                <a href="home.html">About</a>
+                <a href="courses.html">Courses</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+
+    <div class="page-1">
+            <img class="page-image-1" src="images/gff.jpg" alt="image of a model">
+        <div class="quote-page-1">
+            Taste the future<br> of Technology.<br> <span class="quote-part2">Explore Technology's<br> future flavor.<br></span>
+        </div>
+        <img src="images/100088163.cms.webp"  class="page-image-2" alt="Background black ink lines">
+    </div>
+
+<div class="page-2">
+
+    <div class="about-section">
+        <hr width="3px" color="grey">
+        <img src="images/1557297015phpQUDvbS.png" alt="image of institute" class="staff-image">
+          <p class="about-heading">About Us</p>
+       <p class="about-paragraph">
+        "Welcome to Rayat Bahra Institution!
+
+At Rayat Bahra, we are committed to providing a transformative educational experience. Our institution stands as a beacon of academic excellence, offering a diverse range of programs guided by experienced faculty. With cutting-edge facilities and a vibrant campus life, we cultivate a community where students can explore, learn, and grow.
+
+We foster critical thinking, creativity, and a spirit of innovation. Join Rayat Bahra Institution to embark on a journey of academic achievement, personal development, and future success. Your path to a brighter tomorrow starts here at Rayat Bahra Institution."
+       <hr width="3px" color="grey">
+    </div>
+
+    
+
+        <!--page 3-->
+    
+        <div class="section">
+          <h2>Our Motive</h2>
+          <img src="images/IMG-20220303-WA00042-plb84tdsf24woalvu2i397c018ggdgzs86vfrr8xoo.jpg" alt="about us">
+          <p class="des-para" id="description">
+            At Rayat Bahra, we prioritize our students' well-being and success, offering them unparalleled support and resources throughout their academic journey. Our commitment to individualized attention and mentorship ensures that every student receives the care and guidance needed to thrive.
+
+
+          </p>
+          <button onclick="changeDescription()">know more</button>
+        </div>
+    
+        <script>
+          function changeDescription() {
+            var description = document.getElementById("description");
+            description.innerHTML = "Join us and discover the extraordinary treatment that sets Rayat Bahra apart, where your success is our priority.";
+          }
+        </script>
+      </div> 
+
+</div>
+
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <p>"Welcome to Our College Community!"</p>
+    </div>
+  </div>
+  
+  <script>
+
+var modal = document.getElementById("myModal");
+window.onload = function() {
+  modal.style.display = "block";
+};
+
+var span = document.getElementsByClassName("close")[0];
+
+
+function closeModal() {
+  modal.style.display = "none";
+}
+
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+  </script>
+
+
+    </body>
+</html>
