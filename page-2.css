@@ -1,0 +1,133 @@
+page-2{
+  display: block;
+  margin-top:75px;
+  background-image: url('images/maxresdefault.jpg');
+  background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+.staff-image{
+float:left;
+height:500px;
+width:600px;
+object-fit: cover;
+margin-left: 70px;
+margin-right:10px;
+border-radius: 10px;}
+
+  .about-section {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 5px solid white;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .about-heading {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .about-paragraph {
+    font-style: italic;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .section {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 5px solid white;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+  }
+
+  .section img {
+    width: 500px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 5px solid white;
+  }
+
+  .des-para {
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+
+.modal {
+display: none; 
+position: fixed; 
+z-index: 1; 
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto; 
+background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+background-color: #fefefe;
+margin: 15% auto;
+padding: 20px;
+border: 1px solid #888;
+width: 80%;
+font-size: 24px; 
+color: #333; 
+}
+
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  .staff-image{
+    margin-left: 0;
+    margin-right: 0;
+
+  }
+.about-heading
+.about-paragraph
+.des-para
+{
+  font-size: 16px;
+}
+.section img{
+  width: 100%;
+}
+}
